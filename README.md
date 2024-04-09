@@ -20,3 +20,15 @@ with the following features:
 - [make](https://www.gnu.org/software/make/) for running common tasks
 - [basic multi stage docker file](https://github.com/iplitharas/project-template/blob/main/%7B%7Bcookiecutter.__project_slug%7D%7D/Dockerfile) for building and running the project.
 - [GitHub Actions](https://docs.github.com/en/actions) for CI/CD
+
+
+## Usage
+Create a new project using the template by running the following command:
+```bash
+cookiecutter git@github.com:iplitharas/project-template.git
+```
+Go to the project directory and build it:
+```bash
+cd <project-name>
+make setup-local-env
+```
