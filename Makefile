@@ -9,7 +9,7 @@ poetry-install: create-env
 	  source .env/bin/activate && poetry install
 
 install-hooks:
-	poetry pre-commit install
+	poetry run  pre-commit install
 
 setup-local-env: poetry-install install-hooks ## Setup the local environment 🔨🐍
 
@@ -17,7 +17,7 @@ test-cov: ## Run pytest with an html coverage report 🏁
 	poetry run pytest . -vv -p no:warnings --cov=. --cov-report=xml --cov-report=html
 
 test: ## Run pytest with coverage 🏁
-	poetry pytest . -vv -p no:warnings --cov=.
+	poetry run pytest . -vv -p no:warnings --cov=.
 
 check: ## Run ruff formatter,linter and mypy static analyzer and check code quality 🧐
 	poetry run ruff format src
@@ -28,7 +28,7 @@ clean:  ## Clean temp dirs 🧹
 	rm -rf  .pytest_cache coverage.xml .mypy_cache  .coverage .coverage.* htmlcov
 
 clean-hooks: ## Clean hooks 🧹
-	poetry pre-commit clean
+	poetry run pre-commit clean
 
 .PHONY: help create-env poetry-install install-hooks setup-local-env test test-cov \
  		 check clean-hooks clean
