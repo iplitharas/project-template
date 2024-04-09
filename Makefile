@@ -22,7 +22,7 @@ test: ## Run pytest with coverage 🏁
 check: ## Run ruff formatter,linter and mypy static analyzer and check code quality 🧐
 	poetry run ruff format hooks
 	poetry run ruff check hooks
-	poetry run mypy hooks 
+	poetry run mypy hooks
 
 clean:  ## Clean temp dirs 🧹
 	rm -rf  .pytest_cache coverage.xml .mypy_cache  .coverage .coverage.* htmlcov
