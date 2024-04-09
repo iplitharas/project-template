@@ -1,7 +1,7 @@
 {
   "project_name": "",
   "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
-  "author": "iplitharas@gmail.com",
+  "author": "johnplitharas@gmail.com",
   "python_version" : "3.11",
   "poetry_version": "1.6.1",
    "init_git": true,
