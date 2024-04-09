@@ -32,3 +32,5 @@ Go to the project directory and build it:
 cd <project-name>
 make setup-local-env
 ```
+
+![create.gif](data/create.gif)
