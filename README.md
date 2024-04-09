@@ -1,4 +1,4 @@
-# project-template
+# py-template
 Python project template using cookiecutter 🍪
 
 [![Test Project Template](https://github.com/iplitharas/project-template/actions/workflows/test.yaml/badge.svg)](https://github.com/iplitharas/project-template/actions/workflows/test.yaml)
