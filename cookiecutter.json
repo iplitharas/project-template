@@ -1,0 +1,15 @@
+{
+  "project_name": "",
+  "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "author": "iplitharas@gmail.com",
+  "python_version" : "3.11",
+  "poetry_version": "1.6.1",
+   "init_git": true,
+  "__prompts__": {
+    "project_name": "Type your project name here",
+     "author": "Your email/username",
+     "python_version": "Select your python version, 3.11 is the default(needs to be installed using pyenv)",
+     "poetry_version": "Select your poetry version",
+     "init_git": "If you want to initialize a git repository"
+   }
+}
