@@ -20,9 +20,9 @@ test: ## Run pytest with coverage 🏁
 	poetry run pytest . -vv -p no:warnings --cov=.
 
 check: ## Run ruff formatter,linter and mypy static analyzer and check code quality 🧐
-	poetry run ruff format src
-	poetry run ruff check src
-	poetry run mypy src
+	poetry run ruff format hooks
+	poetry run ruff check hooks
+	poetry run mypy hooks 
 
 clean:  ## Clean temp dirs 🧹
 	rm -rf  .pytest_cache coverage.xml .mypy_cache  .coverage .coverage.* htmlcov
